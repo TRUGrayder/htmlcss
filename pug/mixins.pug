@@ -1,0 +1,28 @@
+mixin tourItems(image, price, title, review, reviewCount, address)
+    .tour-travel-dad
+        .tour-top 
+            img.tour-top-picture(src=image, alt="this-is-picture")
+            span.tour-top-price= price
+        .tour-under 
+            .tour-under-content 
+                span=title 
+            .tour-under-content1 
+                .tour-under-rating-review
+                    img.tour-under-rating-image(src="./images/star.svg", alt="this-is-picture-star")
+                    span.tour-under-rating-text=review 
+                        | (#{reviewCount}Yêu mến)
+                span.tour-under-duration-text Duration: 9 hours
+            div
+                a.tour-under-button-text(href=address , target='_blank', rel='noopener noreferrer') Nick Fackebook
+                
+mixin popularItem()
+    .popular-item 
+        .popular-image 
+            img.popular-img(src="https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt="")
+            a(href="https://www.facebook.com/profile.php?id=100046987730467", target="_blank", rel="noopener noreferrer").popular-label Must see
+        .popular-content 
+            time.popular-time Sep 28 10:00 AM - 1:00 PM
+            h3.pupular-title The Grand Palace
+            .popular-review 
+                img(src="./images/star.svg", alt="this-is-star")
+                span 4.8 (12 reviews)

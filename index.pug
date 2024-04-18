@@ -1,0 +1,59 @@
+include ./pug/mixins
+
+doctype html
+html(lang="en")
+head
+meta(charset="UTF-8")
+meta(name="viewport", content="width=device-width, initial-scale=1.0")
+title TRUGrayder 
+link(rel="preconnect" href="https://fonts.googleapis.com")
+link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+link(href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet")
+link(rel="stylesheet" href="./app2.css")
+body
+    header 
+    main
+        section.top-tours
+            .container
+                h2.heading Top Bangkok Tours
+                .tour-list
+                    +tourItems("./images/colla.jpg", "From 50$", "Cô công chúa NHI xinh đẹp nhất trên đời này luôn", 4.6, "34M", "https://www.facebook.com/mi.bach.902819")
+                    +tourItems("https://scontent.fhan15-1.fna.fbcdn.net/v/t1.15752-9/429575968_404121028873374_7632812561542110665_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHOCsw9QsWTRYbaByUuYEVPjxciRc3ak0yPFyJFzdqTTGFG8abrULVJm5eNAPUAW0sMMePiHfTFa83iu8b98Tqo&_nc_ohc=uIQpkSuq2CIAb70zCDM&_nc_ht=scontent.fhan15-1.fna&oh=03_AdX-L9TwaYO2s-8N9hYBZ0lLmvV5lwvzMuKaTxSxwbPN9g&oe=6638FE45", "From 60$", "TRUNG LỘC VÀ THÀNH LỘC hai thằng con trai trong nhà", 4.2, "23M", "https://www.facebook.com/profile.php?id=100046987730467")
+                    +tourItems("./images/mehabolochihi.jpg","From 100$", "MẸ HÀ và BỐ LỘC tuyệt vời ông mặt trời luôn",5.0, "50M", "https://www.facebook.com/profile.php?id=100094310877689") 
+                    //-+tourItems("https://scontent.fhan5-9.fna.fbcdn.net/v/t1.15752-9/432066031_1071328437499265_4581158769590387366_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH3iZXGVBAc9fGNxoADXXzs7lFx4WpZzR7uUXHhalnNHi0C-td7jiLnm1XWNQSZI56WRcwntom-1JPppEczTgCz&_nc_ohc=ATTJIeQ0K_UAb6gy-sZ&_nc_oc=AdjUy9q9pjLn6GfwghL50_j_6RIEmMFtpTeF7AIZiSNXHch-s5IielowhFImZYsX72Y&_nc_ht=scontent.fhan5-9.fna&oh=03_AdVapYjyAEqqrVxlsxpWA5AvyUjwHOZnbNd0Cji5dQM-Ag&oe=6638F703", "From 67$", "Thôn Phái Đông-Tân Lâm Hương-Thạch Hà-Hà Tĩnh", 5.0, "42M", "https://www.facebook.com/profile.php?id=100092703930902") 
+                    //-+tourItems("https://scontent.fhan15-2.fna.fbcdn.net/v/t1.15752-9/429592278_379041004922061_2571658508282612323_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFNMAj7YQuMgueiK39amGEdn7MZqRSVp7KfsxmpFJWnsrpAN8qyQXdn9_FmTYvCT2x2hpeSQKxXT50YwzYqLkuP&_nc_ohc=uO5pHJUXH98Ab70udFJ&_nc_ht=scontent.fhan15-2.fna&oh=03_AdWke2phY4DXTVtylr1Z_NwwU965J9yfOn785B1ynHQgvA&oe=6638FCFC","From 60$", "Chị cả của cả nhà đó chính xác là OANH xinh gái:>", 4.3, "30M", "https://www.facebook.com/le.kimoanh.927758" )
+        section.popular
+            .container
+                h2.heading Popular things to do in Bangkok
+                .popular-list 
+                    +popularItem()
+                    +popularItem()
+                    +popularItem()
+                    +popularItem()
+                    +popularItem()
+                    +popularItem()
+                    +popularItem()
+        section.gem 
+            .container 
+                h2.heading Hidden gems in Bangkok 
+                .gem-list 
+                    each val in ["https://plus.unsplash.com/premium_photo-1675147909300-1c0d891b00ea?q=80&w=1929&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D","https://images.unsplash.com/photo-1712514496282-6f3a73aff338?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D","https://images.unsplash.com/photo-1712324014968-018a63a4d0e8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D","https://images.unsplash.com/photo-1712023105222-653af4f805b6?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D","https://images.unsplash.com/photo-1604715686140-d5bef96c8b9d?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
+                        .gem-item
+                            img(src= val, alt="star")               
+        section.trip 
+            .container 
+                h2.heading  Hidden gems in Bangkok  
+                .trip-list 
+                    each val in ["./images/trip.png" , "./images/trip.png", "./images/trip.png" , "./images/trip.png"]  
+                        .trip-item
+                            .trip-img
+                                img(src=val alt="image")   
+                                .trip-content
+                                    .trip-element   
+                                        .trip-title 
+                                            span Bangkok Trip
+                                        .trip-time 
+                                            span 27 Sep, 2020    
+        a.button(href="#", target="_blank", rel="noopener noreferrer") Explore All
+    footer.footer  this is a footer  
+       

@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body{ 
+     font-family: "Inter", sans-serif;
+     font-weight: 500;
+     
+ }
+ .tour-beautiful{
+     width: 370px;
+     height: 420px;
+     border-color: rgb(196, 58, 122);
+     
+ }
+ .tour-image{
+     width: 370px;
+     height:250px;
+ }
+ .tour-content{
+     /* padding: top right bottom left*/
+     padding: 20px 20px 14px 20px;
+ }
+ 
