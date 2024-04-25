@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: black;
+    background-color:pink;
     margin: 0 auto;
     max-width: 1300px;
     
@@ -25,11 +25,6 @@ body{
     animation-iteration-count: infinite;
     top: -30613px;
     left :577px;
-    
-    
-   
-  
-
 }
 
 @keyframes textshadow{
