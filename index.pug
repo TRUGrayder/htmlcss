@@ -55,5 +55,43 @@ body
                                         .trip-time 
                                             span 27 Sep, 2020    
         a.button(href="#", target="_blank", rel="noopener noreferrer") Explore All
-    footer.footer  this is a footer  
-       
+    footer.footer  
+        .container.footer-container
+            .footer-top
+                .footer-columns 
+                    .footer-column
+                        a.footer-logo(href="/")  
+                            img(srcSet="./images/logo.png 2x" alt ="Airtrav" )   
+                        p.footer-desc  Similarly, a loan taken out to buy a car may be secured by the car. The duration of the loan.  
+                        form.subscribe(action="" autocompete)
+                            input(type="email" placeholder="Enter your email").subscribe-email  
+                            button.subcribe-button(type="submit") 
+                                img(src="./images/Line.png" alt ="icon-arrow-right")  
+                    .footer-column
+                        h4.footer-heading Services
+                        ul.footer-links 
+                            each val in ["Trip Planner","Tour Planning","Tour Guide","Tour Package","Tour advice"]
+                                li.footer-item  
+                                    a.footer-link(href="#")= val
+                    .footer-column
+                        h4.footer-heading Services
+                        ul.footer-links 
+                            each val in ["Trip Planner","Tour Planning","Tour Guide","Tour Package","Tour advice"]
+                                li.footer-item  
+                                    a.footer-link(href="#")= val
+                    .footer-column
+                        h4.footer-heading Services
+                        ul.footer-links 
+                            each val in ["Trip Planner","Tour Planning","Tour Guide","Tour Package","Tour advice"]
+                                li.footer-item  
+                                    a.footer-link(href="#")= val 
+            .footer-under 
+                .footer-text
+                    p Copyright© 2024 UIHUT LLC. All rights reserved
+                .footer-icons 
+                    a(href="#", target="_blank", rel="noopener noreferrer").click-icon
+                        img(src="./images/fb.png", alt="this-is-facbook")
+                        img(src="./images/line1.png", alt="this-is-linkedin")
+                        img(src="./images/twiter.png", alt="this-is-twitter")
+                        img(src="./images/instragam.png", alt="this-is-instragam")
+                          

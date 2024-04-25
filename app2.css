@@ -10,24 +10,48 @@ img{
     max-width: 100%;
     
 }
+a{
+    text-decoration: none;
+}
+ul
+ol{
+    list-style-type: none;/*khong hien dau cham va so trong the ul va ol*/
+}
+input,
+button,
+textarea,
+select{
+    width: 100%;
+    outline:none;
+    font:inherit;
+    background-color: transparent;
+    border: none;
+}
+button{
+    background-color: var(--primary-color);
+}
+   
 :root{
     --primary-color: #2979ff;
     --black-color: #353945;
+    --gray-1:#23262F;
     --gray-6:  #F4F5F6;
     --gray-2:#353945;
     --gray-3: #777E90;
     --gray-4f:#4F4F4F;
+    --gray-4:#B1B5C3;
     --gray-5:#E6E8EC;
     --primary-font: "Inter", sans-serif;
     --secondary-font: "DM Sans", sans-serif;
     --white-white:#FFFFFF;
-  
+    --fz-default: 14px;
 }
 body{
-  
+    font-weight: 500;
     font-family: var(--primary-font);
-    background: #f5f5f5;
-   
+    background:white;
+    color:var(--gray-3);
+    font-size: var(--fz-default);
    
 }
 
@@ -61,7 +85,9 @@ body{
     font-size: 18px;
     margin-bottom: 10px;
     line-height: 28px;
-   max-width: 300px;
+    max-width: 300px;
+    color: var(--gray-1);
+    
 }
 .tour-under{
     margin:20px 20px 14px 20px;
@@ -71,6 +97,7 @@ body{
     display: flex;
     align-items: center;
     column-gap: 5px;
+    
 }
 .tour-under-content1{
     margin-bottom: 20px;
@@ -78,9 +105,13 @@ body{
    justify-content: space-between;
     align-items: center;
 }
+.tour-under-rating-text{
+    color:#3B3E44
+}
 .tour-under-duration-text{
-
+    color:#3B3E44;
     margin-left: 30px;
+
 }
 .tour-under-button-text{
     padding: 8px 17px 9px 17px;
@@ -462,7 +493,128 @@ section{
     margin-block: 70px;
     margin: 70px auto;
    
-}   
+}
+/*footer*/
+.footer{
+    padding: 70px 0;
+}
+.container.footer-container{
+        width: 1130px;
+      
+}
+.footer-link{
+    display: block;
+  
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--gray-3);
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap:14px;
+    list-style-type: none;
+}
+.footer-heading{
+    font-size: 24px;
+    color:var(--gray-2);
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.footer-columns{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: row;
+    
+    
+   
+    
+}
+.footer-column:first-child{
+    max-width: 268px;
+}
+.footer-logo img{
+   
+    width: 121px;
+    height: 40px;
+}
+.footer-logo{
+    display:inline-block;
+     margin-bottom: 40px;
+    
+}
+.footer-desc{
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--gray-2);
+    margin-bottom: 30px;
+
+}
+.footer-top{
+    padding-bottom: 71px;
+    border-bottom: 1px solid var(--gray-5);
+}
+.footer-under{
+    margin-top: 40px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.subscribe{
+    padding: 8px 8px 8px 26px;
+    display: flex;
+    align-items: center;
+    border-radius: 100rem;
+    border: 2px solid var(--gray-5);
+    justify-content: space-between;
+    align-items: center;
+   
+   
+}
+.subscribe-email{
+    padding-right: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--gray-2);
+    font-weight: 500;
+    
+   
+}
+.subscribe-email::-webkit-input-placeholder{
+    color: var(--gray-4);
+}
+.subscribe-email::-moz-input-placeholder{
+    color: var(--gray-4);
+}
+.subcribe-button{
+    width: 33px;
+    height: 33px;
+    border-radius: 100rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.footer-text{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color:var(--gray-4);
+    display: flex;
+    align-items: flex-start;
+    
+}
+.click-icon{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--gray-6);
+    align-items: center;
+    gap: 14px;
+}
+   
 
 
 /*@media screen and (min-width:768px ) and (max-width:1023.98px){

@@ -1,0 +1,727 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    margin: 0 auto;
+    max-width: 1300px;
+    
+    
+}
+
+.one-heart-text{
+    position: relative;
+    animation-name: textshadow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.text{
+    
+    position: absolute;
+    animation-name: colortext;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    top: -30613px;
+    left :577px;
+    
+    
+   
+  
+
+}
+
+@keyframes textshadow{
+    0% {text-shadow:5px 2px 3px rgb(230, 2, 238)  ;}
+    25% {text-shadow:5px 2px 3px  rgb(241, 44, 110);}
+    50% {text-shadow:5px 2px 3px  rgba(175, 1, 108, 0.841);}
+    100% {text-shadow:5px 2px 3px  rgb(254, 7, 7) ;}
+    
+}
+@keyframes colortext{
+    0%   {color:rgb(230, 2, 238) ;}
+    25%  {color: rgb(241, 44, 110);}
+    50%  {color: rgba(175, 1, 108, 0.841); }
+    100% {color: rgb(254, 7, 7);}
+
+}
+
+
+.heart-dad{
+   
+    
+    width: 237px;
+    height: 210px; 
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    top:20px;
+    /*background-color: aliceblue;*/
+
+   
+    animation-name: scale;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+   
+}
+
+
+
+.heart::before,
+.heart::after {
+   
+    content: " ";
+    position: absolute;
+    top:0px;
+    
+    width:110px;
+    height:200px;
+    box-shadow: 10px 5px 20px 0 rgb(236, 4, 170);
+  
+   /*animation-name: shadow;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;*/
+    border-radius:300px 300px 0 0 ;
+    animation-name: background-color;
+    animation-duration: 4s;
+ 
+    animation-iteration-count: infinite;
+}
+.heart::after{
+    transform: rotate(45deg);
+    left: 96px;
+   
+   
+
+}
+.heart::before{
+    transform: rotate(-45deg);
+    left:32px;
+   
+   
+    
+}
+
+.heart-text1{
+    width: 100%;
+    position: absolute;
+    top:100px;
+    left:79px;
+    animation-name: color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+    font-size: 20px;
+    font-weight: 500;
+
+}  
+
+@keyframes background-color{
+    0%   {background-color: pink;}
+    25%  {background-color: rgb(150, 43, 132);}
+    50%  {background-color: rgb(211, 31, 231);}
+    100% {background-color: rgb(234, 21, 21);}
+}
+/*@keyframes shadow{
+    0%   {box-shadow:10px 10px 5px 0 rgb(8, 33, 161) ;}
+    25%  {box-shadow:10px 10px 5px 0 rgb(8, 161, 77)  ;}
+    50%  {box-shadow:10px 10px 5px 0 rgb(193, 234, 7)  ;}
+    100% {box-shadow:10px 10px 5px 0 rgb(161, 8, 120)  ;}
+}*/
+@keyframes color {
+    0%   {color:  rgb(254, 7, 7);}
+    25%  {color: rgb(25, 233, 233);}
+    50%  {color: rgb(9, 70, 5);}
+    100% {color:rgb(244, 234, 238); }
+}
+@keyframes scale{
+    0% {transform: scale(0);}
+    25% {transform: scale(0.10);}
+    25% {transform: scale(0.15);}
+    100% {transform: scale(0.20);}
+}
+
+.one.heart-dad{
+    top:-148px; 
+  
+}
+.two.heart-dad{
+   top:-315px;
+}
+.three.heart-dad{
+    top:-483px; 
+}
+.four.heart-dad{
+    top:-651px; 
+}
+.five.heart-dad{
+    top:-860px; 
+}
+.six.heart-dad{
+    top:-1027px; 
+}
+.seven.heart-dad{
+    top:-1195px; 
+   
+}
+.eight.heart-dad{
+    top:-1362.5px;
+   
+    
+}
+.nine.heart-dad{
+    top:-1870px;
+    left: 48px;
+
+}
+.ten.heart-dad{
+    top:-2037px;
+    left:48px;
+}
+.eleven.heart-dad{
+    top:-2205px;
+    left:48px;
+}
+.s12.heart-dad{
+    top:-2373px;
+    left:48px;
+}
+.s12.heart-dad{
+    top:-2372.5px;
+    left:48px;
+}
+.s13.heart-dad{
+    top:-2540.8px;
+    left:48px;
+}
+.s14.heart-dad{
+    top:-2708px;
+    left:48px;
+}
+.s15.heart-dad{
+    top:-2876px;
+    left:48px;
+}
+.s16.heart-dad{
+    top:-3043px;
+    left:48px;
+}
+.s17.heart-dad{
+    top:-3549px;
+    left:96px;
+}
+.s18.heart-dad{
+    top:-3717.5px;
+    left:96px;
+}
+.s19.heart-dad{
+    top:-3926.5px;
+    left:144px;
+}
+.s20.heart-dad{
+    top:-4094.5px;
+    left:144px;
+}
+.s21.heart-dad{
+    top:-4305px;
+    left:192px;
+}
+.s22.heart-dad{
+    top:-4473px;
+    left:192px;
+}
+.s23.heart-dad{
+    top:-4684px;
+    left:240px;
+}
+.s24.heart-dad{
+    top:-4852px;
+    left:240px;
+}
+.s25.heart-dad{
+    top:-5062px;
+    left:288px;
+}
+.s26.heart-dad{
+    top:-5230px;
+    left:288px;
+}
+.s27.heart-dad{
+    top:-5440px;
+    left:336px;
+}
+.s28.heart-dad{
+    top:-5608px;
+    left:336px;
+}
+.s29.heart-dad{
+    top:-5818px;
+    left:384px;
+}
+.s30.heart-dad{
+    top:-5985px;
+    left:384px;
+}
+.s31.heart-dad{
+    top:-6194px;
+    left:432px;
+}
+.s32.heart-dad{
+    top:-6447px;
+    left:432px;
+}
+.s33.heart-dad{
+    top:-6699px;
+    left:432px;
+}
+.s34.heart-dad{
+    top:-6951px;
+    left:432px;
+}
+.s35.heart-dad{
+    top:-7203px;
+    left:432px;
+}
+.s36.heart-dad{
+    top:-7454px;
+    left:432px;
+}
+.s37.heart-dad{
+    top:-7705px;
+    left:432px;
+}
+.s38.heart-dad{
+    top:-7956px;
+    left:432px;
+}
+.s39.heart-dad{
+    top:-9010px;
+    left:384px;
+}
+.s40.heart-dad{
+    top:-9262px;
+    left:384px;
+}
+.s41.heart-dad{
+    top:-9513px;
+    left:384px;
+}
+.s42.heart-dad{
+    top:-9763px;
+    left:384px;
+}
+.s43.heart-dad{
+    top:-10015px;
+    left:384px;
+}
+.s44.heart-dad{
+    top:-10267px;
+    left:384px;
+}
+.s45.heart-dad{
+    top:-10180px;
+    left:550px;
+}
+.s46.heart-dad{
+    top:-7913px;
+    left:550px;
+}
+.s47.heart-dad{
+    top:-8166px;
+    left:550px;
+}
+.s48.heart-dad{
+    top:-8419px;
+    left:550px;
+}
+.s49.heart-dad{
+    top:-8671px;
+    left:550px;
+}
+.s50.heart-dad{
+    top:-8924px;
+    left:550px;
+}
+.s51.heart-dad{
+    top:-11696px;
+    left:550px;
+}
+.s52.heart-dad{
+    top:-11949px;
+    left:550px;
+}
+.s53.heart-dad{
+    top:-11946px;
+    left:598px;
+}
+.s54.heart-dad{
+    top:-12069px;
+    left:598px;
+}
+.s55.heart-dad{
+    top:-12323px;
+    left:598px;
+}
+.s56.heart-dad{
+    top:-12619px;
+    left:598px;
+}
+.s57.heart-dad{
+    top:-12872px;
+    left:598px;
+}
+.s58.heart-dad{
+    top:-13124px;
+    left:598px;
+}
+.s59.heart-dad{
+    top:-13377px;
+    left:598px;
+}
+.s60.heart-dad{
+    top:-13630px;
+    left:598px;
+}
+.s61.heart-dad{
+    top:-13670px;
+    left:646px;
+}
+.s62.heart-dad{
+    top:-13924px;
+    left:646px;
+}
+.s63.heart-dad{
+    top:-14134px;
+    left:694px;
+}
+.s64.heart-dad{
+    top:-14299px;
+    left:694px;
+}
+.s65.heart-dad{
+    top:-14509px;
+    left:742px;
+}
+.s66.heart-dad{
+    top:-14764px;
+    left:742px;
+}
+.s67.heart-dad{
+    top:-14885px;
+    left:742px;
+}
+.s68.heart-dad{
+    top:-15052px;
+    left:742px;
+}
+.s69.heart-dad{
+    top:-15218px;
+    left:742px;
+}
+.s70.heart-dad{
+    top:-15647px;
+    left:742px;
+}
+.s71.heart-dad{
+    top:-15900px;
+    left:742px;
+}
+.s72.heart-dad{
+    top:-16154px;
+    left:742px;
+}
+.s73.heart-dad{
+    top:-16058px;
+    left:790px;
+}
+.s74.heart-dad{
+    top:-16312px;
+    left:790px;
+}
+.s75.heart-dad{
+    top:-16566px;
+    left:790px;
+}
+.s76.heart-dad{
+    top:-16819px;
+    left:790px;
+}
+.s77.heart-dad{
+    top:-17074px;
+    left:790px;
+}
+.s78.heart-dad{
+    top:-17328px;
+    left:790px;
+}
+.s79.heart-dad{
+    top:-17581.5px;
+    left:790px;
+}
+.s80.heart-dad{
+    top:-17836px;
+    left:790px;
+}
+.s81.heart-dad{
+    top:-17743px;
+    left:934px;
+}
+.s82.heart-dad{
+    top:-17996px;
+    left:934px;
+}
+.s83.heart-dad{
+    top:-18248px;
+    left:934px;
+}
+.s84.heart-dad{
+    top:-18500px;
+    left:934px;
+}
+.s85.heart-dad{
+    top:-18753px;
+    left:934px;
+}
+.s86.heart-dad{
+    top:-19006px;
+    left:934px;
+}
+.s87.heart-dad{
+    top:-19260px;
+    left:934px;
+}
+.s88.heart-dad{
+    top:-19514px;
+    left:934px;
+}
+.s89.heart-dad{
+    top:-19424px;
+    left:982px;
+}
+.s90.heart-dad{
+    top:-19676px;
+    left:982px;
+}
+.s91.heart-dad{
+    top:-19927px;
+    left:982px;
+}
+.s92.heart-dad{
+    top:-20180px;
+    left:982px;
+}
+.s93.heart-dad{
+    top:-20433px;
+    left:982px;
+}
+.s94.heart-dad{
+    top:-20687px;
+    left:982px;
+}
+.s95.heart-dad{
+    top:-20939px;
+    left:982px;
+}
+.s96.heart-dad{
+    top:-21193px;
+    left:982px;
+}
+.s97.heart-dad{
+    top:-21493px;
+    left:962px;
+}
+.s98.heart-dad{
+    top:-21163px;
+    left:10px;
+}
+.s99.heart-dad{
+    top:-21373px;
+    left:58px;
+}
+.s100.heart-dad{
+    top:-21583px;
+    left:107px;
+}
+.s101.heart-dad{
+    top:-21750px;
+    left:58px;
+}
+.s102.heart-dad{
+    top:-21917px;
+    left:58px;
+}
+.s103.heart-dad{
+    top:-22084px;
+    left:58px;
+}
+.s104.heart-dad{
+    top:-22251px;
+    left:58px;
+}
+.s105.heart-dad{
+    top:-22419px;
+    left:58px;
+}
+.s106.heart-dad{
+    top:-22628px;
+    left:10px;
+}
+.s107.heart-dad{
+    top:-22839px;
+    left:107px;
+}
+.s108.heart-dad{
+    top:-23210px;
+    left:507px;
+}
+.s109.heart-dad{
+    top:-23445px;
+    left:470px;
+}
+.s110.heart-dad{
+    top:-23675px;
+    left:430px;
+}
+.s111.heart-dad{
+    top:-23875px;
+    left:385px;
+}
+.s112.heart-dad{
+    top:-24059px;
+    left:350px;
+}
+.s113.heart-dad{
+    top:-24229px;
+    left:338px;
+}
+.s114.heart-dad{
+    top:-24404px;
+    left:370px;
+}
+.s115.heart-dad{
+    top:-24580px;
+    left:400px;
+}
+.s116.heart-dad{
+    top:-24763px;
+    left:440px;
+}
+.s117.heart-dad{
+    top:-24945px;
+    left:477px;
+}
+.s118.heart-dad{
+    top:-25127px;
+    left:525px;
+}
+.s119.heart-dad{
+    top:-25542px;
+    left:546px;
+}
+.s120.heart-dad{
+    top:-25774px;
+    left:586px;
+}
+.s121.heart-dad{
+    top:-25974px;
+    left:630px;
+}
+.s122.heart-dad{
+    top:-26159px;
+    left:667px;
+}
+.s123.heart-dad{
+    top:-26329px;
+    left:694px;
+}
+.s124.heart-dad{
+    top:-26498px;
+    left:675px;
+}
+.s125.heart-dad{
+    top:-26675px;
+    left:645px;
+}
+.s126.heart-dad{
+    top:-26857px;
+    left:608px;
+}
+.s127.heart-dad{
+    top:-27043px;
+    left:569px;
+}
+.s128.heart-dad{
+    top:-27455px;
+    left:969px;
+}
+.s129.heart-dad{
+    top:-27621px;
+    left:969px;
+}
+.s130.heart-dad{
+    top:-27787px;
+    left:969px;
+}
+.s131.heart-dad{
+    top:-27953px;
+    left:969px;
+}
+.s133.heart-dad{
+    top:-28329px;
+    left:969px;
+}
+.s134.heart-dad{
+    top:-28496px;
+    left:969px;
+}
+.s135.heart-dad{
+    top:-28706px;
+    left:1017px;
+}
+.s136.heart-dad{
+    top:-28916px;
+    left:1065px;
+}
+.s137.heart-dad{
+    top:-29126px;
+    left:1113px;
+}
+.s138.heart-dad{
+    top:-29336px;
+    left:1161px;
+}
+.s139.heart-dad{
+    top:-29589px;
+    left:1161px;
+}
+.s140.heart-dad{
+    top:-29841px;
+    left:1161px;
+}
+.s141.heart-dad{
+    top:-30095px;
+    left:1161px;
+}
+.s142.heart-dad{
+    top:-30393px;
+    left:1161px;
+}
+.s143.heart-dad{
+    top:-30559px;
+    left:1161px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

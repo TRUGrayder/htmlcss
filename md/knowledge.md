@@ -127,6 +127,9 @@ Hoạt động tương tự wrapnhưng bắt đầu chéo và kết thúc chéo 
 - `value`: 10px ; 20px; -15px; -30px , 10%, lưu ý khi sử dụng % thì % ở đây chính là độ rộng hoặc chiều cao của khối chúng ta đang áp dụng thuộc tính transform và hàm translate
 - _variables_: Biến là gì? Khai báo như thế nào ? Cách sử dụng ra sao ? Ưu và nhược điểm của nó là gì ?
 - _grid_: dàn layout cực nhanh
+`1fr`
+
+-_fit-content_:độ rộng bằng nội dung nó chưaas
 
 **Để thụt lề tất cả các dòng code vào hoặc ra một tab trong Visual Studio Code, bạn có thể sử dụng các phím tắt sau:**
 
@@ -147,3 +150,27 @@ Hoạt động tương tự wrapnhưng bắt đầu chéo và kết thúc chéo 
 - _padding-block_ : tương ứng padding-top và padding-bottom
 -_caniuse_: là một trang web giúp chúng ta kiểm tra những thuộc tính trong css xem nó có được nhiều trình duyệt hỗ trợ hay không? Từ đó chúng ta có thể chắc chắn sử dụng vào dự án 
 -_semantic tags_:header(phần phía trên) , footer(phía dưới), main(chính), section(khối), article(một bài viết), nav(menu), aside(phần bên trái bấm chạy ra chạy vô)
+-_list-style-type_:thuộc tính này dùng cho thẻ ul(`disc`) và ol(`decimal`)
+-_list-style-position_:outside hoặc inside
+-_form_: dùng để làm các form(biểu mẫu) nhập thông tin để làm việc gì đó ví dụ như đăng kí tài khoản, đăng nhập, gửi email, điền thông tin cá nhân...
+- _input_ : có thuộc tính (attribute) , và nó là thẻ tự đóng
+-`type` có nhiều loại tùy thuộc vào mục đích chúng ta sử dụng :text, email, number, phone, time, date, file,password, checkbox, radio,submit..., 
+-`placeholder` 1 lớp chữ giả mờ để nói cho chúng ta biết input đó làm gì
+-`name` dùng để truy xuất dữ liệu
+- `required` bắt buộc 
+- `disabled` không cho phép nhập vào, và khi submit form nó cũng không lấy được dữ liệu
+-`readonly` chỉ đọc, không sửa được tuy nhiên khi submit form thì vẫn lấy được dữ liệu 
+- `min` thường dùng cho number, tức là số nhỏ nhất
+- `max` tương tự ở dingf trên nhưng là số lớn nhất
+- `min-length` tối thiểu kí tự
+- `max-length` tối đa kí tự
+
+
+- _button_
+-`type`: button, submit, reset
+- `inputmode`: _search_, _tel_ , _decimal_, _email_ _ulr_
+- `autocomplete`: tự động điền, _on_ , _off_
+- Trạng thái input có `focus ` `valid` `invalid` `out-of-range`...
+- Button có thêm `hover`, `focus `  , `active`, `disabled`
+- _select_ thường sẽ đc tùy biến lại bằng cách dùng ul li
+- textarea
